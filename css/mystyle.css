@@ -1,0 +1,445 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2vw;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+/* My FrameWorks */
+.clearFix {
+  clear: both;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+}
+
+/* NavBar */
+.navBar {
+  background-color: #EEE;
+  height: 0;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.navBar .brand {
+  float: left;
+  width: 40%;
+  text-transform: uppercase;
+  line-height: 10vh;
+}
+
+.navBar .brand h2 {
+  font-size: 2.04vw;
+}
+
+.navBar ul {
+  float: left;
+  width: 60%;
+  list-style-type: none;
+  line-height: 10vh;
+  text-align: right;
+}
+
+.navBar ul li {
+  display: inline-block;
+  margin: 0 2.5%;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.44vw;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navBar ul li:hover a, .navBar ul li.active a {
+  color: #1abc9c;
+  text-decoration: underline;
+}
+
+/* HEADER STYLE */
+header {
+  background: url(../imgs/Header3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header .overlayHeader {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header .bx-wrapper {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  background: none;
+  height: 100%;
+}
+
+header .bx-wrapper .bx-viewport {
+  height: 100% !important;
+  text-align: center;
+}
+
+header .bx-wrapper .bx-viewport .slider {
+  height: 100%;
+}
+
+header .bx-wrapper .bx-viewport .slider li {
+  display: block;
+}
+
+header .bx-wrapper .bx-viewport .slider li h2 {
+  font-size: 2.64vw;
+  color: white;
+  margin-bottom: 15px;
+}
+
+header .bx-wrapper .bx-viewport .slider li h2 span {
+  color: #1abc9c;
+}
+
+header .bx-wrapper .bx-viewport .slider li p {
+  font-size: 1.92vw;
+  color: white;
+}
+
+/* SECTIONS STYLE */
+section {
+  padding-top: 40px;
+  /* SECTIONS SERVICES */
+  /* Section Testimonials Style*/
+  /* SLIDER TESTIMONIALS STYLE*/
+  /* SECTION PORTFOLIO STYLE*/
+}
+
+section h2 {
+  margin-bottom: 30px;
+  color: #222;
+  position: relative;
+}
+
+section h2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  width: 4%;
+  border-bottom: 2px solid black;
+}
+
+section.services .item {
+  width: 30%;
+  margin: 1%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.services .item i {
+  color: #1abc9c;
+  width: 20%;
+  font-size: 3.6vw;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+section.services .item .info-item {
+  width: 75%;
+}
+
+section.services .item .info-item h3 {
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: #3a3535;
+}
+
+section.services .item .info-item p {
+  color: #888;
+}
+
+section.testimonials .textBox {
+  width: 33%;
+  float: left;
+  margin-right: 2%;
+}
+
+section.testimonials .textBox h2 {
+  margin-bottom: 20px;
+}
+
+section.testimonials .textBox h2:after {
+  width: 12%;
+}
+
+section.testimonials .textBox p {
+  color: #888;
+}
+
+section.testimonials .imageBox {
+  width: 60%;
+  float: right;
+}
+
+section.testimonials .imageBox .image {
+  width: 23%;
+  margin: 0.5%;
+  display: inline-block;
+  position: relative;
+}
+
+section.testimonials .imageBox .image img {
+  width: 100%;
+  height: 100%;
+}
+
+section.testimonials .imageBox .image .overlayTeam {
+  height: 97%;
+  background-color: rgba(26, 188, 156, 0.5);
+  font-weight: bold;
+  padding-top: 65%;
+  display: none;
+}
+
+section.testimonials .imageBox .image:hover .overlayTeam {
+  display: block;
+}
+
+section.sliderTesti {
+  margin: 50px 0;
+  width: 100%;
+  background: url(../imgs/Header4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 25vw;
+  position: relative;
+  text-align: center;
+  padding: 40px 0;
+}
+
+section.sliderTesti .overlayTesti {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.sliderTesti h3 {
+  font-size: 2.4vw;
+  margin: 11% 0 2%;
+}
+
+section.sliderTesti .contentTestimonials {
+  display: none;
+}
+
+section.sliderTesti .contentTestimonials q {
+  font-size: 1.44vw;
+  display: block;
+  margin: 0 10% 15px;
+}
+
+section.sliderTesti .contentTestimonials span {
+  color: #1abc9c;
+  font-size: 1.56vw;
+  font-weight: bold;
+}
+
+section.sliderTesti .contentTestimonials.active {
+  display: block;
+}
+
+section.portfolio button {
+  display: inline-block;
+  border: 1px solid #D4CCCC;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 10px;
+  background-color: white;
+  color: #D4CCCC;
+  cursor: pointer;
+}
+
+section.portfolio button.active {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+  color: white;
+}
+
+section.portfolio .galery {
+  margin: 20px auto;
+  height: 47vw;
+}
+
+section.portfolio .galery > div {
+  width: 30%;
+  margin: 1%;
+  float: left;
+  position: relative;
+}
+
+section.portfolio .galery > div .overlayPort {
+  height: 98%;
+  background-color: rgba(26, 188, 156, 0.8);
+  font-weight: bold;
+  padding-top: 25%;
+  font-size: 1.56vw;
+  display: none;
+}
+
+section.portfolio .galery > div .heart {
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  font-size: 1.92vw;
+  color: white;
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+}
+
+section.portfolio .galery > div .heart i {
+  margin-right: 2px;
+}
+
+section.portfolio .galery > div:hover .overlayPort {
+  display: block;
+}
+
+section.portfolio .galery > div:hover .heart {
+  display: block;
+}
+
+section.portfolio .galery > div img {
+  width: 100%;
+  z-index: 1;
+}
+
+/* Separator */
+hr {
+  width: 80%;
+  margin: 40px auto 15px;
+  border: 1px solid #EEE;
+}
+
+/* FOOTER STYLE */
+footer {
+  background-color: #232323;
+  color: #6c6c6c;
+  padding: 20px;
+}
+
+footer .col {
+  width: 23%;
+  float: left;
+  margin: 1%;
+}
+
+footer .col h2 {
+  color: #FFF;
+  font-weight: normal;
+  margin-bottom: 20px;
+  font-size: 1.44vw;
+}
+
+footer .col p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 1.08vw;
+}
+
+footer .col i {
+  display: inline-block;
+  color: #CCC;
+  margin: 0 5px 15px;
+  width: 3.5vw;
+  border: 1px solid #6c6c6c;
+  padding: 8px 5px;
+  text-align: center;
+}
+
+footer .col span {
+  display: inline-block;
+  color: #CCC;
+  margin: 0 3px 8px;
+  border: 1px solid #6c6c6c;
+  padding: 5px 3px;
+  text-align: center;
+  font-size: 1.08vw;
+}
+
+footer .col > div {
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+footer .col > div img {
+  width: 5vw;
+  height: 4vw;
+  float: left;
+  margin-right: 10px;
+}
+
+footer .col > div h4 {
+  float: left;
+  margin: 5px 0;
+  color: #CCC;
+  font-size: 1.32vw;
+}
+
+footer .col > div p {
+  float: left;
+  margin-bottom: 0;
+  font-size: 1.08vw;
+}
+
+footer .col ul {
+  list-style-type: none;
+}
+
+footer .col ul li {
+  padding: 0 0 10px;
+  border-bottom: 1px solid #6c6c6c;
+  color: #CCC;
+  margin-bottom: 10px;
+}
+
+footer .copyright {
+  margin-top: 15px;
+  float: left;
+}
+
+footer .creator {
+  margin-top: 15px;
+  float: right;
+}
+/*# sourceMappingURL=mystyle.css.map */
